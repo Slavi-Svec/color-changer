@@ -1,14 +1,14 @@
-const colorBtn = document.querySelector('.colorBtn');
+const button = document.querySelector('.button');
 const bodyBg = document.querySelector('body');
-const colorBtn2 = document.querySelector('.colorBtn');
 
-const colors = ['yellow','green','blue','orange','pink','majenta','cyan','violet'];
 
-colorBtn.addEventListener('click', changeColor);
+const colors = ['yellow', 'green', 'blue', 'orange', 'pink', 'majenta', 'cyan', 'violet'];
+
+button.addEventListener('click', changeColor);
 
 function changeColor() {
     bodyBg.style.backgroundColor = colors[randomNum()];
-    colorBtn2.style.backgroundColor = colors[randomNum()];
+    button.style.backgroundColor = colors[randomNum()];
 }
 
 function randomNum() {
